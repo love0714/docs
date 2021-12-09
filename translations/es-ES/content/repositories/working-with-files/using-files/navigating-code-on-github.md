@@ -1,21 +1,21 @@
 ---
-title: Código de navegación en GitHub
-intro: 'Puedes comprender las relaciones dentro y a través de los repositorios al navegar directamente por código en {% data variables.product.product_name %}.'
+title: Navigating code on GitHub
+intro: 'You can understand the relationships within and across repositories by navigating code directly in {% data variables.product.product_name %}.'
 redirect_from:
   - /articles/navigating-code-on-github
   - /github/managing-files-in-a-repository/navigating-code-on-github
   - /github/managing-files-in-a-repository/managing-files-on-github/navigating-code-on-github
 versions:
   fpt: '*'
+  ghec: '*'
 topics:
   - Repositories
 ---
-
 <!-- If you make changes to this feature, update /getting-started-with-github/github-language-support to reflect any changes to supported languages. -->
 
-## Acerca de la navegación de código en {% data variables.product.prodname_dotcom %}
+## About navigating code on {% data variables.product.prodname_dotcom %}
 
-La navegación de código utiliza la biblioteca de código abierto [`tree-sitter`](https://github.com/tree-sitter/tree-sitter). Los siguientes idiomas son compatibles:
+Code navigation uses the open source library [`tree-sitter`](https://github.com/tree-sitter/tree-sitter). The following languages are supported:
 - C#
 - CodeQL
 - Go
@@ -26,23 +26,23 @@ La navegación de código utiliza la biblioteca de código abierto [`tree-sitter
 - Ruby
 - TypeScript
 
-{% note %}
+## Jumping to the definition of a function or method
 
-**Nota**: La navegación de código funciona para las ramas activas. Si tienes la función habilitada pero no ves los enlaces a las definiciones de las funciones y los métodos, sube a la rama y trata nuevamente.
+You can jump to a function or method's definition within the same repository by clicking the function or method call in a file.
 
-{% endnote %}
+![Jump-to-definition tab](/assets/images/help/repository/jump-to-definition-tab.png)
 
-## Saltar a la definición de una función o método
+## Finding all references of a function or method
 
-Puedes saltar a una definición de función o de método dentro del mismo repositorio si das clic en la llamada a dicha función o método dentro de un archivo.
+You can find all references for a function or method within the same repository by clicking the function or method call in a file, then clicking the **References** tab.
 
-![Pestaña Jump-to-definition](/assets/images/help/repository/jump-to-definition-tab.png)
+![Find all references tab](/assets/images/help/repository/find-all-references-tab.png)
 
-## Buscar todas las referencias de una función o método
+## Troubleshooting code navigation
 
-Puedes encontrar todas las referencias para una función o método dentro del mismo repositorio si das clic en el llamado a dicha función o método en un archivo y posteriormente das clic en la pestaña de **Referencias**.
+If code navigation is enabled for you but you don't see links to the definitions of functions and methods:
+- Code navigation only works for active branches. Push to the branch and try again.
+- Code navigation only works for repositories with less than 100,000 files.
 
-![Pestaña Find all references (Buscar todas las referencias)](/assets/images/help/repository/find-all-references-tab.png)
-
-## Leer más
-- "[Buscar código](/github/searching-for-information-on-github/searching-code)"
+## Further reading
+- "[Searching code](/github/searching-for-information-on-github/searching-code)"

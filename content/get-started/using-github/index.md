@@ -8,13 +8,14 @@ versions:
   fpt: '*'
   ghes: '*'
   ghae: '*'
+  ghec: '*'
 children:
   - /exploring-early-access-releases-with-feature-preview
   - /supported-browsers
   - /github-cli
   - /github-desktop
-  - /github-for-mobile
+  - /github-mobile
   - /keyboard-shortcuts
+  - /github-command-palette
   - /troubleshooting-connectivity-problems
 ---
-
